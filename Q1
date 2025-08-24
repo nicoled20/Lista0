@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int numero, i;
+    
+    scanf("%d", &numero);
+
+    if (numero > 0) {
+        for (i = 1; numero >= i; i++) {
+            printf("%d\n", i);
+        }
+    } else {
+       printf("Este número não é um inteiro positivo\n");
+    }
+
+    return 0;
+}
