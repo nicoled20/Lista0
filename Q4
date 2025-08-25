@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int opcao;
+    float celsius, fahrenheit;
+
+    printf("Digite 1 para converter de Celsius para Fahrenheit ou 2 de Fahrenheit para Celsius\n");
+    scanf("%d", &opcao);
+
+    if (opcao == 1) {
+        printf("Digite a temperatura em Celsius: ");
+        scanf("%f", &celsius);
+        fahrenheit = (celsius * 9 / 5) + 32;
+        printf("%.2f Celsius = %.2f Fahrenheit\n", celsius, fahrenheit);
+    } 
+    else if (opcao == 2) {
+        printf("Digite a temperatura em Fahrenheit: ");
+        scanf("%f", &fahrenheit);
+        celsius = (fahrenheit - 32) * 5 / 9;
+        printf("%.2f Fahrenheit = %.2f Celsius\n", fahrenheit, celsius);
+    } 
+    else {
+        printf("Opcao invalida!\n");
+    }
+
+    return 0;
+}
